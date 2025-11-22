@@ -7,3 +7,6 @@ variable "subnet_2_cidr" {}
 variable "az2" {}
 variable "subnet_2_name" {}
 variable "IGW_Name" {}
+variable "subnet_3_cidr" {}
+variable "az3" {}
+variable "subnet_3_name" {}

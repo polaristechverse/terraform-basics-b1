@@ -26,6 +26,16 @@ resource "aws_subnet" "Demo-Subnet-2" {
   }
 
 }
+resource "aws_subnet" "Demo-Subnet-3" {
+  vpc_id                  = aws_vpc.Demo-vpc.id
+  cidr_block              = var.subnet_3_cidr
+  availability_zone       = var.az3
+  map_public_ip_on_launch = true
+  tags = {
+    "Name" = var.subnet_3_name
+  }
+
+}
 
 resource "aws_internet_gateway" "Demo-IGW" {
   vpc_id = aws_vpc.Demo-vpc.id
