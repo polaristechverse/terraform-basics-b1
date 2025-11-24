@@ -10,3 +10,8 @@ variable "IGW_Name" {}
 variable "subnet_3_cidr" {}
 variable "az3" {}
 variable "subnet_3_name" {}
+variable "public_route_name" {}
+variable "ami" {}
+variable "key_name" {}
+variable "instance_type" {}
+variable "instance_name" {}
